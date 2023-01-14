@@ -3,7 +3,7 @@ local path = mod_loader.mods[modApi.currentMod].resourcePath
 local mod = mod_loader.mods[modApi.currentMod]
 local resourcePath = mod.resourcePath
 local scriptPath = mod.scriptPath
-local previewer = require(scriptPath.."weaponPreview/api")
+local previewer = mod.libs.weaponPreview
 local hotkey = require(scriptPath.."libs/hotkey")
 local tips = require(scriptPath .."libs/tutorialTips")
 local function IsTipImage()
@@ -955,6 +955,7 @@ function Fission_Generator:GetSkillEffect(p1,p2)
 			damage.sImageMark = "power/nuclearIcon.png"
 			ret:AddDamage(damage)
 		end
+		--LOG(Offset)
 		if Offset >= 8 then
 			ret:AddScript("NAH_NN_Chievo('NAH_NN_recharge')")
 		end

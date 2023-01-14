@@ -16,7 +16,7 @@ for y = 1, 10 do
 		PosY = offset_y + y * -4,
 		Time = 0.60
 	}
-	
+
 	ANIMS["NAH_flashing_long_"..y] = ANIMS.Animation:new{
 		Image = "power/flashing_long.png",
 		NumFrames = 12,
@@ -31,14 +31,14 @@ for y = 1, 10 do
 		PosY = offset_y + y * -4,
 		Time = 1.20
 	}
-	
+
 	ANIMS["NAH_on_short_"..y] = ANIMS.Animation:new{
 		Image = "power/on.png",
 		PosX = offset_x,
 		PosY = offset_y + y * -4,
 		Time = 0.5
 	}
-	
+
 	ANIMS["NAH_plus_"..y] = ANIMS.Animation:new{
 		Image = "power/plus.png",
 		NumFrames = 6,

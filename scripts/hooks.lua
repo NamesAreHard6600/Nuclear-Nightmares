@@ -2,7 +2,7 @@ local path = mod_loader.mods[modApi.currentMod].resourcePath
 local mod = mod_loader.mods[modApi.currentMod]
 local resourcePath = mod.resourcePath
 local scriptPath = mod.scriptPath
-local previewer = require(scriptPath.."weaponPreview/api")
+local previewer = mod.libs.weaponPreview
 local hotkey = require(scriptPath.."libs/hotkey")
 local function IsTipImage()
 	return Board:GetSize() == Point(6,6)
@@ -123,14 +123,14 @@ end
 
 function this:load(NAH_NuclearNightmares_ModApiExt)
 	local options = mod_loader.currentModContent[mod.id].options
-	
+
 	NAH_NN_AttackOrder = options["NAH_NN_AttackOrder"].value
     modApi:addMissionStartHook(startHook)
 	modApi:addTestMechEnteredHook(TestStartHook)
 	--modApi:addNextTurnHook(StartTurnHook) BOX CHANGED, NO LONGER USED
-	modApi:addMissionNextPhaseCreatedHook(FinalIslandPhaseTwoHook)	
+	modApi:addMissionNextPhaseCreatedHook(FinalIslandPhaseTwoHook)
 	sdlext.addPreKeyDownHook(attackOrder)
-	
+
 end
 
 return this
