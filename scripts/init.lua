@@ -3,8 +3,6 @@
 --change test mech to not be excessive code. (I'm too lazy to do this)
 
 --TODO
---Art
-
 --Weird extra space on recharge: Has to do with Note in the hangar, but it's not a big deal
 
 local function init(self)
