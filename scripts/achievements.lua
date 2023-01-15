@@ -15,9 +15,9 @@ function NAH_NN_Chievo(id)
 end
 
 local imgs = {
-	"a",
-	"b",
-	"c",
+	"oneshot",
+	"recharge",
+	"conservative",
 }
 
 local achname = "NAH_NN_"
@@ -30,7 +30,7 @@ modApi.achievements:add{
 	id = "NAH_NN_oneshot",
 	name = "One Punch Mech",
 	tip = "Four times during a single mission, kill an unwounded Vek that has 4 or more health with Nuclear Punch.\n$ Killed",
-	img = "img/achievements/NAH_NN_a.png",
+	img = "img/achievements/NAH_NN_oneshot.png",
 	squad = "NAH_NuclearNightmares",
 	objective = 4, --Can break with reset turns but I don't care enough right now
 }
@@ -39,7 +39,7 @@ modApi.achievements:add{
 	id = "NAH_NN_recharge",
 	name = "Recharge!",
 	tip = "Regain 8 energy with one action of the fission generator.",
-	img = "img/achievements/NAH_NN_b.png",
+	img = "img/achievements/NAH_NN_recharge.png",
 	squad = "NAH_NuclearNightmares",
 	objective = 1,
 }
@@ -48,7 +48,7 @@ modApi.achievements:add{
 	id = "NAH_NN_conservative",
 	name = "Planning Ahead",
 	tip = "Combust 3 Nuclear Boxes in one turn.\n$ Combusted",
-	img = "img/achievements/NAH_NN_c.png",
+	img = "img/achievements/NAH_NN_conservative.png",
 	squad = "NAH_NuclearNightmares",
 	objective = 3,
 }
