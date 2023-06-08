@@ -86,6 +86,7 @@ local function attackOrder(keycode)
 						local pawn_name = Board:GetPawn(Point(i,j)):GetMechName()
 						if pawn_id >= 0 and pawn_id <= 2 then
 							previewer:SetLooping(true)
+							local counter = 0
 							if pawn_name == "Nuclear Mech" then
 								if not IsTipImage() and not IsTestMechScenario() then
 									counter = mission.NAH_NuclearPowerValues[pawn_id].PrimePower
