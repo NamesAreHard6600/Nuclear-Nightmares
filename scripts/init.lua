@@ -180,7 +180,7 @@ return {
 	description = "Taking nuclear Energy with them, these mechs are the Vek's worst nightmare, as long as you have the Energy.",
 	modApiVersion = "2.8.0",
 	gameVersion = "1.2.83",
-	version = "1.1.0",
+	version = "1.1.1",
 	requirements = { "kf_ModUtils" },
 	dependencies = {
 		modApiExt = "1.17",

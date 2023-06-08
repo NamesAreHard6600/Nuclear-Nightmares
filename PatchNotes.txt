@@ -94,3 +94,6 @@ Fixed adding weapons to the shop, since the old version is deprecated. There is 
 Added a custom damage tip for Nuclear Punch
 Updated to Weapon Previewer 3.1.3
 Updated to 2.8.3 Modloader (and modapiext)
+
+1.1.1 Hotfix:
+Fix second phase crash and full energy mechs that aren't nuclear mechs

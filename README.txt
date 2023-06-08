@@ -1,4 +1,4 @@
-Into the Breach Squad: Nuclear Nightmares 1.1.0
+Into the Breach Squad: Nuclear Nightmares 1.1.1
 By: NamesAreHard
 A lot of the amazing Art: Machin
 Contact me on discord via the Into The Breach server or @NamesAreHard#2501 for bug reports,
